@@ -1,0 +1,360 @@
+body, html {
+	margin:0;
+}
+
+#container {
+	width: 	100%;
+	max-width: 	1200px;
+	margin: 0 auto;
+}
+
+	nav {
+		background-color: black;
+		color: white;
+		height: 50px;
+	}
+		nav p:nth-of-type(1){
+			float: left;
+		}
+		nav p:nth-of-type(2){
+			float: right;
+		}
+	#hero {
+		text-align: center;
+		color: white;
+		background-image: url(images/hero_1200.jpg); /* fallback */
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url(images/hero_1200.jpg);
+		background-position: center;
+		background-size: cover;
+		height: 400px;
+		font-size: 1.5em;
+	}
+		#hero img {
+			margin-top: -35px;
+		}
+		#hero h1 {
+			font-size: 2em;
+			margin: .3em auto;
+		}
+	#gallery {
+		height: 365px;
+	}
+	#gallery h1{
+		text-align: center;
+		color: red;
+		font-size: 2em;
+	}
+	#gallery img{
+		float: left;
+		width: 30%;
+		margin: 1% 1.667%;
+	}
+	#thumbnail {
+		/*margin: 0 -5%;*/
+	}
+
+
+	#review {
+		margin: 0 auto;
+	}
+	#review h1 {
+		text-align: center;
+	}
+	#review > div {
+		margin: 0 auto;
+	}
+	table {
+		margin: 0 auto;
+		white-space: nowrap;
+	}
+			#review > div > div:nth-of-type(1){
+				width: 15%;
+				max-width: 63px;
+				float: left;
+				margin-right: 20px;
+			}
+			#review > div > div:nth-of-type(2){
+				/*width: calc( 100% - 63px -20px );*/
+				width: 80%;
+				float: left;
+				
+			}
+				#review > div > div > div{
+					margin: 0 -1em;
+				}
+					#review > div > div > div p {
+						width: max-content;
+						float: left;
+						padding: 0 1em;
+					}
+		#review p {
+			margin: 0;
+		}
+.dot_ver_align {
+	/*float: left;*/
+/*	position: relative;
+	top: 25%;
+	transform: translateY(-25%);*/
+	height: 18px;
+	line-height: 18px;
+	vertical-align: super;
+}
+
+td	{
+	/*width: max-content;*/
+}
+.ver_align {
+	vertical-align: middle;
+	transform: translateY(-25%);
+	text-align: center;
+}
+
+
+
+#menu {
+/*	text-transform: uppercase;
+	color: white;*/
+/*	font-size: 2em;
+	text-align: center;*/
+}
+#menu > div {
+/*	background-color: black;
+	width: 180px;
+	margin: 5px auto;*/
+}
+#menu > div:nth-of-type(1) {
+/*	font-size: 1.1em;
+	text-decoration: underline;*/
+}
+#menu p {
+/*	margin: 0;
+	padding: 10px;*/
+}
+#menu h1 {
+	margin: 0;
+	padding: 0;
+	/*font-size: 1.1em;*/
+	text-decoration: underline;
+}
+
+/*@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato';
+}*/
+
+
+#menu .menu_heading {
+	font-size: 1em;
+	padding: 2em;
+}
+#menu .menu_item {
+	background-color: black;
+	color: white;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+.heading-primary {
+  font-size: 2em;
+  padding: 2em;
+  text-align: center;
+}
+
+.accordion dl,
+.accordion-list {
+  /*border: 1px solid #ddd;*/
+}
+.accordion dl:after,
+.accordion-list:after {
+  content: "";
+  display: block;
+  height: 1em;
+  width: 100%;
+  /*background-color: #2ba659;*/
+}
+
+.accordion dd,
+.accordion__panel {
+  /*background-color: #eee;*/
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.accordion p {
+  padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+  position: relative;
+  /*background-color: #eee;*/
+}
+
+#menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em 0 2em 0;
+}
+
+.accordionTitle,
+.accordion__Heading {
+  /*background-color: #38cc70;*/
+  background-color: #000;
+  text-align: center;
+  font-weight: 700;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  /*border-bottom: 1px solid #30bb64;*/
+}
+.accordionTitle:before,
+.accordion__Heading:before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  color: red;
+}
+.accordionTitle:hover,
+.accordion__Heading:hover {
+  background-color: #2ba659;
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+  background-color: #2ba659;
+}
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+  max-height: 50em;
+  transition: max-height 1s;
+}
+@media screen and (min-width: 48em) {
+  .accordionItem {
+    max-height: 15em;
+    transition: max-height 0.5s;
+  }
+}
+
+.accordionItem.is-collapsed {
+  max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+
+.animateIn {
+  -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
+          animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+  -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
+          animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@-webkit-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
+}
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
+}
+
+
+#adress {
+	text-align: center;
+}
+
+#adress h1 {
+	color: red;
+	font-size: 2em;
+}
+
+#adress p {
+	font-size: 1.5em;
+}
+
+#canvasfor-googlemap {
+	height: 500px;
+    height: 100%;
+	width:100%;
+	max-width:100%;
+}
+footer {
+	background-color: #000;
+	height: 300px;
+	width: 100%;
+	position: absolute;
+}
+.hor_align{
+	position: relative;
+    top: 33%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
